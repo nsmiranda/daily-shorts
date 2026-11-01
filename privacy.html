@@ -19,13 +19,22 @@
 
 <p>Wonder Bits Daily Shorts ("the App") is a private tool operated by the owner of the Wonder Bits Clips YouTube channel. It produces one
 educational YouTube Short per day for the YouTube channel <strong>Wonder Bits Clips</strong> (@wonderbitsclips) and uploads it only
-after the channel owner approves it. The App has a single user, the channel owner. It does not offer accounts
+after the channel owner approves it. After that, it can also send the same video to the owner's own TikTok
+account (<strong>@wonder.bits.clips</strong>) as a draft, which the owner finishes and posts in the TikTok app.
+The App has a single user, the channel owner. It does not offer accounts
 to the public.</p>
 
 <h2>YouTube API Services</h2>
 <p>The App uses <strong>YouTube API Services</strong>. By using the App you agree to be bound by the
 <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Information obtained through YouTube API
 Services is also subject to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>TikTok</h2>
+<p>The App uses TikTok's Login Kit and Content Posting API (scopes <code>user.info.basic</code> and
+<code>video.upload</code>). Use of TikTok is subject to the
+<a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a> and
+<a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>. The App only uploads the owner's
+approved video to the owner's TikTok inbox; it never posts publicly on its own.</p>
 
 <h2>Information the App accesses, collects and stores</h2>
 <table>
@@ -41,9 +50,16 @@ Services is also subject to the <a href="https://policies.google.com/privacy">Go
     <td>Show the owner how recent videos performed</td><td>On the owner's computer, deleted after 30 days</td></tr>
 <tr><td>Upload response details (privacy and upload status)</td><td>YouTube Data API</td>
     <td>Confirm that an upload succeeded</td><td>On the owner's computer, deleted after 30 days (the video ID is kept)</td></tr>
+<tr><td>TikTok access/refresh token and TikTok user ID (open_id) of the owner's TikTok account</td>
+    <td>TikTok sign-in by the owner</td><td>Send approved videos to the owner's TikTok inbox</td>
+    <td>Only on the owner's computer, until access is revoked</td></tr>
+<tr><td>TikTok display name of the owner's account</td><td>TikTok API</td>
+    <td>Confirm the correct account at sign-in</td><td>Not stored</td></tr>
+<tr><td>Draft ID and processing status of each video sent to TikTok</td><td>TikTok API</td>
+    <td>Avoid sending a video twice; tell the owner if TikTok could not process it</td><td>On the owner's computer</td></tr>
 </table>
 <p>The App does not access or store any information about viewers, commenters, subscribers or other YouTube
-users. It does not read comments, messages or private channel data.</p>
+users, or about other TikTok users. It does not read comments, messages or private channel data.</p>
 
 <h2>How information is used and shared</h2>
 <ul>
@@ -68,7 +84,9 @@ everything the App stored.</p>
 <h2>Revoking access</h2>
 <p>You can revoke the App's access to your Google account at any time on the
 <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>
-(Third-party apps with account access). After you revoke access, the App can no longer upload or read anything.</p>
+(Third-party apps with account access). TikTok access can be removed in the TikTok app under
+Settings and privacy &gt; Security &gt; Apps and services permissions (wording may vary by app version).
+After you revoke access, the App can no longer upload or read anything.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
